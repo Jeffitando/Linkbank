@@ -43,8 +43,8 @@
 
 # Autores
 
-| [<img src="https://avatars.githubusercontent.com/u/87238842?v=4" width=115><br><sub>Lucas Calderon</sub>](https://github.com/lucas8calderon) |  [<img src="https://avatars.githubusercontent.com/u/80928331?v=4" width=115><br><sub>Lucas Anastácio</sub>](https://github.com/guilhermeonrails) |  [<img src="https://avatars.githubusercontent.com/u/89108756?v=4" width=115><br><sub>Paulo Henrique Ribeiro Junior</sub>](https://github.com/alexfelipe) |
-| :---: | :---: | :---: |
+| [<img src="https://avatars.githubusercontent.com/u/86518315?v=4" width=115><br><sub>Jefferson Douglas</sub>](https://github.com/jeffitando) | [<img src="https://avatars.githubusercontent.com/u/87238842?v=4" width=115><br><sub>Lucas Calderon</sub>](https://github.com/lucas8calderon) |  [<img src="https://avatars.githubusercontent.com/u/80928331?v=4" width=115><br><sub>Lucas Anastácio</sub>](https://github.com/guilhermeonrails) |  [<img src="https://avatars.githubusercontent.com/u/89108756?v=4" width=115><br><sub>Paulo Henrique Ribeiro Junior</sub>](https://github.com/alexfelipe) |
+| :---: | :---: | :---: | :---: |
 
 # 🔥:Tecnologias
 
