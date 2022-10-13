@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Emprestimo_valor">
+
+    <CheckBox
+        android:id="@+id/checkBox8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="24x"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/checkBox7"
+        app:layout_constraintTop_toBottomOf="@+id/textView105" />
+
+    <CheckBox
+        android:id="@+id/checkBox7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="18x"
+        app:layout_constraintEnd_toStartOf="@+id/checkBox8"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/checkBox6"
+        app:layout_constraintTop_toBottomOf="@+id/textView105" />
+
+    <CheckBox
+        android:id="@+id/checkBox6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="12x"
+        app:layout_constraintEnd_toStartOf="@+id/checkBox7"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/checkBox5"
+        app:layout_constraintTop_toBottomOf="@+id/textView105" />
+
+    <Button
+        android:id="@+id/btn_valor_emprestimo2"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="400dp"
+        android:backgroundTint="@color/CorDeFundoApp"
+        android:text="Confirmar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView50" />
+
+
+    <com.blackcat.currencyedittext.CurrencyEditText
+        android:id="@+id/edtValorEmprestimo"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="24dp"
+        android:backgroundTint="@color/CorDeFundoAppMaisClara"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        android:textColorHint="@color/CorDeFundoAppMaisClara"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2" />
+
+
+    <include
+        android:id="@+id/include9"
+        layout="@layout/toolbar_emprestimo" />
+
+    <TextView
+        android:id="@+id/textView50"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Valor liberado"
+        android:textColor="@color/CorDeFundoApp"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/include9" />
+
+    <Button
+        android:id="@+id/btn_valor_emprestimo"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="@color/CorDeFundoApp"
+        android:text="R$ 1.400,00"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView50" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:textAlignment="center"
+        android:hint="Nome do empréstimo"
+        android:inputType="text"
+        android:minHeight="48dp"
+        android:textColor="@color/CorDeFundoApp"
+        android:textColorLink="@color/TemaLaranja"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_valor_emprestimo" />
+
+    <TextView
+        android:id="@+id/textView105"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Selecione a quantidade de parcelas"
+        android:textColor="@color/CorDeFundoApp"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtValorEmprestimo" />
+
+    <CheckBox
+        android:id="@+id/checkBox5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="6x"
+        app:layout_constraintEnd_toStartOf="@+id/checkBox6"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView105" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

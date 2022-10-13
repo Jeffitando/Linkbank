@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".NotificacaoMenu">
+
+    <TextView
+        android:id="@+id/textView44"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="15dp"
+        android:text="Receber E-mail:"
+        android:textColor="@color/CorDeFundoApp"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider14" />
+
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:enabled="false"
+        android:hint="email@email.com"
+        android:textSize="16dp"
+        android:inputType="textEmailAddress"
+        app:layout_constraintStart_toEndOf="@+id/imgEditEmail"
+        app:layout_constraintTop_toBottomOf="@+id/textView44" />
+
+    <Switch
+        android:id="@+id/switch3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:textOff="O recebimento de notifações pelo e-mail esta desativado"
+        android:textOn="O recebimento de notificações pelo e-mail esta ativado"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"
+        android:thumbTint="@color/TemaLaranja"
+        android:trackTint="@color/TemaLaranja"
+        app:layout_constraintBottom_toTopOf="@+id/divider15"
+        app:layout_constraintStart_toEndOf="@+id/etEmail"
+        android:outlineAmbientShadowColor="@color/TemaLaranja"
+        app:layout_constraintTop_toBottomOf="@+id/divider14"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <View
+        android:id="@+id/divider15"
+        android:layout_width="409dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="100dp"
+        android:checked="false"
+
+        android:background="?android:attr/listDivider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/switch5" />
+
+    <ImageView
+        android:id="@+id/imgEditEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView44"
+        app:srcCompat="@drawable/ic_edit_laranha" />
+
+    <TextView
+        android:id="@+id/textView42"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="50dp"
+        android:text="Receber SMS no número:"
+        android:textColor="@color/CorDeFundoApp"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView22" />
+
+    <include
+        android:id="@+id/include6"
+        layout="@layout/toolbar_notificacao" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Notificações"
+        android:textColor="@color/CorDeFundoApp"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/include6" />
+
+    <ImageView
+        android:id="@+id/imgEditNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView42"
+        app:srcCompat="@drawable/ic_edit_laranha" />
+
+    <com.santalu.maskara.widget.MaskEditText
+        android:id="@+id/etNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:enabled="false"
+        android:hint="+55 (__) _____ - ____"
+        android:textSize="16dp"
+        android:inputType="number"
+        app:mask="+55 (__) _____ - ____"
+        app:maskCharacter="_"
+        app:maskStyle="completable"
+        app:layout_constraintStart_toEndOf="@+id/imgEditNum"
+        app:layout_constraintTop_toBottomOf="@+id/textView42" />
+
+    <Switch
+        android:id="@+id/switch5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:checked="false"
+        android:thumbTint="@color/TemaLaranja"
+        android:trackTint="@color/TemaLaranja"
+        app:layout_constraintBottom_toBottomOf="@+id/etNum"
+        app:layout_constraintStart_toEndOf="@+id/etNum"
+        app:layout_constraintTop_toBottomOf="@+id/textView42"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <View
+        android:id="@+id/divider14"
+        android:layout_width="409dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="10dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/switch5" />
+
+    <Button
+        android:id="@+id/btnNotificacao"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="30dp"
+        android:backgroundTint="@color/TemaLaranja"
+        android:text="NOTIFICAÇÕES"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider15" />
+
+    <Button
+        android:id="@+id/btnSalvar"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="@color/TemaLaranja"
+        android:text="Salvar dados"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider15" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".valor_transferencia_doc">
+
+    <include
+        android:id="@+id/include24"
+        layout="@layout/toolbar_trans_doc" />
+
+
+
+    <View
+        android:id="@+id/divider52"
+        android:layout_width="409dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="12dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView135" />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tplData"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/divider52">
+
+        <com.santalu.maskara.widget.MaskEditText
+            android:id="@+id/etData"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_borda_arredondada_azul"
+            android:drawableStart="@drawable/ic_aniversario"
+            android:drawablePadding="16dp"
+            android:hint="Data da transferência"
+            android:inputType="date"
+            app:mask="__/__/____"
+            app:maskCharacter="_" />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+    <ImageView
+        android:id="@+id/imageView13"
+        android:layout_width="61dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/include24"
+        app:srcCompat="@drawable/ic_transf" />
+
+    <TextView
+        android:id="@+id/textView134"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="SALDO EM CONTA CORRENTE"
+        android:textColor="@color/CorDeFundoAppMaisClara"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView13" />
+
+    <TextView
+        android:id="@+id/textView135"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="R$ 1.798,00"
+        android:textColor="@color/TemaLaranja"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView134"/>
+
+    <TextView
+        android:id="@+id/txt_informe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="24dp"
+        android:text="Informe o valor a ser transferido"
+        android:textColor="@color/CorDeFundoAppMaisClara"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tplData" />
+
+    <com.blackcat.currencyedittext.CurrencyEditText
+        android:id="@+id/edtValor"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="24dp"
+        android:backgroundTint="@color/CorDeFundoAppMaisClara"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textColorHint="@color/CorDeFundoAppMaisClara"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_informe" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/valorDoc"
+        style="@style/botao_entrar"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Transferir"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtValor" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/corfundo_app_gradient"
+    tools:context=".trocar_senha_cartao">
+
+    <include
+        android:id="@+id/include19"
+        layout="@layout/toolbar_trocar_senha_cartao" />
+
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="354dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="sans-serif-thin"
+        android:text="Nunca foi tão facil atualiar a sua senha de cartão de crédito/debito. Sem sair de casa, troque sua senha ou atualize no momento que quiser."
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/include19" />
+
+
+    <View
+        android:id="@+id/containerComponents"
+        style="@style/ContainerComponents"
+        android:layout_width="380dp"
+        android:layout_height="400dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView21" />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout2"
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toTopOf="@+id/containerComponents"
+        tools:layout_editor_absoluteX="0dp">
+
+        <com.santalu.maskara.widget.MaskEditText
+            android:id="@+id/logincpf"
+            style="@style/Edit_Text"
+            android:layout_marginTop="26dp"
+            android:drawableRight="@drawable/ic_cpf"
+            android:drawablePadding="16dp"
+            android:hint="Digite seu CPF"
+            android:inputType="number"
+            app:layout_constraintEnd_toEndOf="@+id/containerComponents"
+            app:layout_constraintStart_toStartOf="@+id/containerComponents"
+            app:layout_constraintTop_toTopOf="@+id/containerComponents"
+            app:mask=" ___.___.___-__"
+            app:maskCharacter="_"
+            app:maskStyle="completable" />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout3"
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout2"
+        tools:layout_editor_absoluteX="16dp"
+        app:passwordToggleEnabled="true"
+        app:passwordToggleTint="@color/TemaLaranja">
+
+        <EditText
+            android:id="@+id/trocar_senha1"
+            style="@style/Edit_Text"
+            android:drawableRight="@drawable/ic_eye"
+            android:drawablePadding="16dp"
+            android:hint="Digite sua senha atual"
+            android:inputType="numberPassword"
+            android:maxLength="6"
+            app:layout_constraintEnd_toEndOf="@+id/containerComponents"
+            app:layout_constraintStart_toStartOf="@+id/containerComponents"
+            app:layout_constraintTop_toBottomOf="@+id/textInputLayout2" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout3"
+        app:passwordToggleEnabled="true"
+        app:passwordToggleTint="@color/TemaLaranja"
+        tools:layout_editor_absoluteX="0dp">
+
+        <EditText
+            android:id="@+id/trocar_senha2"
+            style="@style/Edit_Text"
+            android:layout_marginTop="16dp"
+            android:drawableRight="@drawable/ic_eye"
+            android:drawablePadding="16dp"
+            android:ems="15"
+            android:hint="Digite sua nova senha"
+            android:inputType="numberPassword"
+            android:maxLength="6"
+            app:layout_constraintEnd_toEndOf="@+id/containerComponents"
+            app:layout_constraintStart_toStartOf="@+id/containerComponents"
+            app:layout_constraintTop_toBottomOf="@+id/trocar_senha1"
+            app:passwordToggleEnabled="true"
+            app:passwordToggleTint="@color/black" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/trocar_senha3"
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout"
+        app:passwordToggleEnabled="true"
+        app:passwordToggleTint="@color/TemaLaranja"
+        tools:layout_editor_absoluteX="0dp">
+
+        <EditText
+            style="@style/Edit_Text"
+            android:layout_marginTop="16dp"
+            android:drawableRight="@drawable/ic_eye"
+            android:drawablePadding="16dp"
+            android:hint="Confirme sua nova senha"
+            android:inputType="numberPassword"
+            android:maxLength="6"
+            app:layout_constraintEnd_toEndOf="@+id/containerComponents"
+            app:layout_constraintStart_toStartOf="@+id/containerComponents"
+            app:layout_constraintTop_toBottomOf="@+id/trocar_senha2" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/trocar_senha4"
+        style="@style/botao_entrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="Trocar"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/containerComponents" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

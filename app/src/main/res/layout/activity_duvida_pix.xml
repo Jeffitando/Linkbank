@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".duvida_pix">
+
+    <TextView
+        android:id="@+id/textView100"
+        android:layout_width="350dp"
+        android:layout_height="100dp"
+        android:layout_margin="16dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="10dp"
+        android:text="Você pode cirar sua chave utilizando o seu número de celular, e-mail, CPF ou uma chave aleatória, que é criada exclusivamente pelo Banco. Cada chave só pode ser vinculada a uma unica conta. E cada conta pode ter até 5 chaves Pix."
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView101" />
+
+    <TextView
+        android:id="@+id/textView101"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="10dp"
+        android:text="O que é preciso para criar chave Pix?"
+        android:textColor="@color/CorDeFundoApp"
+        android:textSize="18dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider50" />
+
+    <TextView
+        android:id="@+id/textView99"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:layout_margin="16dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="10dp"
+        android:text="É sua identificação para receber um pagamento ou transferência de forma facilitada sem a necessidade de informar os dados da sua conta."
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView98" />
+
+    <TextView
+        android:id="@+id/textView98"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="10dp"
+        android:text="O que é chave Pix?"
+        android:textColor="@color/CorDeFundoApp"
+        android:textSize="18dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider49" />
+
+    <include
+        android:id="@+id/include16"
+        layout="@layout/toolbar_saiba_mais_pix" />
+
+    <TextView
+        android:id="@+id/textView95"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="32dp"
+        android:text="Saiba mais sobre o Pix"
+        android:textColor="@color/TemaLaranja"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/include16" />
+
+    <TextView
+        android:id="@+id/textView96"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="20dp"
+        android:text="O que é o Pix?"
+        android:textColor="@color/CorDeFundoApp"
+        android:textSize="18dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView95" />
+
+    <TextView
+        android:id="@+id/textView97"
+        android:layout_width="350dp"
+        android:layout_height="100dp"
+        android:layout_margin="16dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="10dp"
+        android:text="Com o Pix você pode realizar transações em poucos segundos. todos os dias da semana, a qualquer hora e sem custo. Você pode iniciar um pagamento utilziando as chaves Pix, inserindo os dados da conta manualmente ou via QR Code."
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView96" />
+
+    <View
+        android:id="@+id/divider49"
+        android:layout_width="409dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="1dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView97" />
+
+    <View
+        android:id="@+id/divider50"
+        android:layout_width="409dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView99" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Duvida_transferencia">
+
+    <TextView
+        android:id="@+id/textView136"
+        android:layout_width="350dp"
+        android:layout_height="100dp"
+        android:layout_margin="16dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="10dp"
+        android:text="A TED serve a quem deseja realizar operações com valores mais elevados, É um meio mais rápido para transferir dinheiro: como não há necessidade de a operação passar pelo sistema de compensação dos bancos, o dinheiro fica disponível no mesmo dia."
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView98" />
+
+    <include
+        android:id="@+id/tollbar_duvidas"
+        layout="@layout/toolbar_duvida_transferencia" />
+
+
+    <TextView
+        android:id="@+id/textView100"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:text="Caso o destino do recurso seja para outro banco, haverá cobrança de tarifa de R$ 5,00. tanto para TED quanto DOC."
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView101" />
+
+    <TextView
+        android:id="@+id/textView101"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="10dp"
+        android:text="Tarifa"
+        android:textColor="@color/CorDeFundoApp"
+        android:textSize="18dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider50" />
+
+    <TextView
+        android:id="@+id/textView99"
+        android:layout_width="350dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="18dp"
+        android:text=" A DOC é indicado para quem quer realizar transferências bancárias de valores mais baixos, com limite máximo de R$ 4.999,99. Diferente da TED, o dinheiro é liberado apenas no dia útil seguinte ao do processamento da operação, já que passa pelo sistema de compensação (primeiro pelo banco da pessoa que realizou a transferência, para depois chegar ao banco de quem vai receber o dinheiro)."
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView136" />
+
+    <TextView
+        android:id="@+id/textView98"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="10dp"
+        android:text="TED ou DOC?"
+        android:textColor="@color/CorDeFundoApp"
+        android:textSize="18dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider49" />
+
+
+    <TextView
+        android:id="@+id/textView95"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="32dp"
+        android:text="Saiba mais sobre o TED E DOC"
+        android:textColor="@color/TemaLaranja"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tollbar_duvidas" />
+
+    <TextView
+        android:id="@+id/textView96"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="20dp"
+        android:text="O que são transferências bancárias?"
+        android:textColor="@color/CorDeFundoApp"
+        android:textSize="18dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView95" />
+
+    <TextView
+        android:id="@+id/textView97"
+        android:layout_width="350dp"
+        android:layout_height="100dp"
+        android:layout_margin="16dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="10dp"
+        android:text="Para transferir recursos de um banco para outro, você pode optar pelas TEDs (Transferências Eletrônicas Disponíveis), pelos DOCs (Documento de Ordem de Crédito) e até mesmo pelos cheques. Cada uma dessas alternativas tem suas particularidades."
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView96" />
+
+    <View
+        android:id="@+id/divider49"
+        android:layout_width="409dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="1dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView97" />
+
+    <View
+        android:id="@+id/divider50"
+        android:layout_width="409dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView99" />
+
+    <View
+        android:id="@+id/divider53"
+        android:layout_width="409dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView100" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

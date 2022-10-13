@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Solicitar_mudar_tipo_conta_comum"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/textView161"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="128dp"
+        android:text="Conta comum ativa"
+        android:textColor="@color/red"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView162"
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="É cobrada uma taxa de R$ 9,90 ao mês, a não ser que o cliente gaste R$ 500 ou mais em compras com os cartões da conta digital. Nesse caso, a taxa do mês seguinte não é cobrada. Essa opção oferece um saque gratuito ou uma transferência gratuita para outro banco por mês (as transferências entre contas Superdigitais são sempre gratuitas), fornece um cartão Mastercard físico e cinco cartões virtuais. As demais funcionalidades, como pagamento de contas, são gratuitas e ilimitadas. Não há cobrança de anuidade."
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView161" />
+
+    <ImageView
+        android:id="@+id/seta_voltar"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="28dp"
+        android:src="@drawable/ic_seta_esquerda_preta"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Duvidas_boletos">
+
+    <include layout="@layout/toolbar_duvidas_boletos"
+        android:id="@+id/include40"/>
+
+    <TextView
+        android:id="@+id/textView63"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="10dp"
+        android:text="Vantagens e Desvantagens"
+        android:textColor="@color/CorDeFundoApp"
+        android:textSize="18dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider38" />
+
+    <TextView
+        android:id="@+id/textView62"
+        android:layout_width="350dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="-20dp"
+        android:layout_marginTop="10dp"
+        android:text="Nesse contexto, vale lembrar que o boleto é acessível a qualquer pessoa. Para fazer a aquisição de um produto via boleto, o consumidor só precisa informar os seus dados pessoais para a emissão desse título. Já no caso de compras no cartão ou Pix, é necessário ter uma conta bancária."
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView25" />
+
+    <TextView
+        android:id="@+id/textView25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="10dp"
+        android:text="Em tempos de Pix, vale a pena aceitar boleto?"
+        android:textColor="@color/CorDeFundoApp"
+        android:textSize="18dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider50" />
+
+
+
+
+
+
+
+    <TextView
+        android:id="@+id/textView136"
+        android:layout_width="350dp"
+        android:layout_height="90dp"
+        android:layout_margin="16dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="10dp"
+        android:text="Quando o banco recebe o pagamento do comprador, ele repassa o valor para a conta do cedente, descontando a taxa cobrada pelo seu serviço, no prazo definido previamente, que geralmente é de até três dias úteis."
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView98" />
+
+
+    <TextView
+        android:id="@+id/textView100"
+        android:layout_width="350dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="-20dp"
+        android:layout_marginTop="10dp"
+        android:text="Por atender a um grande público que ainda não está inserido no sistema bancário. Por outro lado, o pagamento por boleto demora um tempo maior para ser confirmado pelo banco, quando comparado com o cartão de crédito ou Pix, por exemplo.  "
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.592"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView63" />
+
+    <TextView
+        android:id="@+id/textView98"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="10dp"
+        android:text="Como funciona o pagamento por boleto?"
+        android:textColor="@color/CorDeFundoApp"
+        android:textSize="18dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider49" />
+
+
+    <TextView
+        android:id="@+id/textView95"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Saiba mais sobre boleto bancário"
+        android:textColor="@color/TemaLaranja"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/include40" />
+
+    <TextView
+        android:id="@+id/textView96"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="20dp"
+        android:text="O que é boleto bancário?"
+        android:textColor="@color/CorDeFundoApp"
+        android:textSize="18dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView95" />
+
+    <TextView
+        android:id="@+id/textView97"
+        android:layout_width="350dp"
+        android:layout_height="80dp"
+        android:layout_margin="16dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="10dp"
+        android:text="O boleto bancário é uma forma de pagamento oficial, regulamentada pelo Banco Central do Brasil. Na prática, nada mais é do que um título de cobrança que contém informações "
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView96" />
+
+    <View
+        android:id="@+id/divider49"
+        android:layout_width="409dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="1dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView97" />
+
+    <View
+        android:id="@+id/divider50"
+        android:layout_width="409dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="1dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView136" />
+
+    <View
+        android:id="@+id/divider38"
+        android:layout_width="409dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView62" />
+
+    <View
+        android:id="@+id/divider39"
+        android:layout_width="409dp"
+        android:layout_height="1dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView100" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

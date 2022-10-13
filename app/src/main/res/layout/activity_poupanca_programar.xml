@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".PoupancaProgramar">
+
+    <include
+        android:id="@+id/include27"
+        layout="@layout/toolbar_poupanca_programar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <CalendarView
+        android:id="@+id/calendarView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/include27" />
+
+    <Button
+        android:id="@+id/btn_pagamento1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="@color/white"
+        android:clickable="true"
+        android:drawableEnd="@drawable/ic_calendario"
+        android:elevation="20dp"
+        android:padding="16dp"
+        android:text="Programar pagamento"
+        android:textAlignment="textStart"
+        android:textColor="@color/CorDeFundoAppMaisClara"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/calendarView"
+        tools:ignore="ButtonStyle" />
+
+    <Button
+        android:id="@+id/btn_pagamento2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="@color/white"
+        android:clickable="true"
+        android:drawableEnd="@drawable/ic_calendario"
+        android:elevation="20dp"
+        android:padding="16dp"
+        android:text="pagamentos programados"
+        android:textAlignment="textStart"
+        android:textColor="@color/CorDeFundoAppMaisClara"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_pagamento1"
+        tools:ignore="ButtonStyle" />
+
+    <Button
+        android:id="@+id/btn_pagamento3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="@color/white"
+        android:clickable="true"
+        android:drawableEnd="@drawable/ic_calendario"
+        android:elevation="20dp"
+        android:padding="16dp"
+        android:text="Progamar Poupança"
+        android:textAlignment="textStart"
+        android:textColor="@color/CorDeFundoAppMaisClara"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_pagamento2"
+        tools:ignore="ButtonStyle" />
+
+    <Button
+        android:id="@+id/btn_pagamento4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="@color/white"
+        android:clickable="true"
+        android:drawableEnd="@drawable/ic_calendario"
+        android:elevation="20dp"
+        android:padding="16dp"
+        android:text="Poupança programada"
+        android:textAlignment="textStart"
+        android:textColor="@color/CorDeFundoAppMaisClara"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_pagamento3"
+        tools:ignore="ButtonStyle" />
+</androidx.constraintlayout.widget.ConstraintLayout>

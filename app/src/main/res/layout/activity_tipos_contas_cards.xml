@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TiposContasCards">
+
+
+    <include
+        android:id="@+id/include20"
+        layout="@layout/toolbar_tipos_contas" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginTop="44dp"
+        android:clickable="true"
+        android:elevation="30dp"
+        app:cardCornerRadius="20dp"
+        app:cardMaxElevation="32dp"
+        app:cardPreventCornerOverlap="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/include20">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layout_cartao_comum"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:background="@drawable/cardmodel1">
+
+            <TextView
+                android:id="@+id/textView116"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="54dp"
+                android:text="COMUM"
+                android:textColor="#FFFFFF"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView120"
+                android:layout_width="320dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="1dp"
+                android:hint="É cobrada uma taxa de R$ 9,90 ao mês, a não ser que o cliente gaste R$ 500 ou mais em compras com os cartões da conta digital..."
+                android:textSize="16sp"
+                android:textColorHint="#FFFFFF"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView116" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginTop="24dp"
+        android:clickable="true"
+        android:elevation="30dp"
+        app:cardCornerRadius="10dp"
+        app:cardMaxElevation="32dp"
+        app:cardPreventCornerOverlap="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layout_cartao_super"
+            android:layout_width="match_parent"
+            android:layout_height="216dp"
+            android:background="@drawable/cardmodel5"
+            app:layout_constraintTop_toBottomOf="@+id/cardView">
+
+            <TextView
+                android:id="@+id/textView90"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="54dp"
+                android:text="SUPER"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:layout_width="320dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="12dp"
+                android:hint="Essa opção de assinatura é gratuita, sem taxas mensais e pode ser cancelada a qualquer momento..."
+                android:textColorHint="#FFFFFF"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView90" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView3"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:clickable="true"
+        android:elevation="30dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginTop="24dp"
+        app:cardCornerRadius="10dp"
+        app:cardMaxElevation="32dp"
+        app:cardPreventCornerOverlap="true"
+        app:layout_constraintTop_toBottomOf="@+id/cardView2">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layout_cartao_premium"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:background="@drawable/cardmodel2"
+            app:layout_constraintTop_toBottomOf="@+id/cardView2">
+
+            <TextView
+                android:id="@+id/textView91"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="54dp"
+                android:text="PREMIUM"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:layout_width="320dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="12dp"
+                android:hint="Assinatura gratuita, sem taxas mensais e pode ser cancelada a qualquer momento..."
+                android:textColorHint="#FFFFFF"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView91" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

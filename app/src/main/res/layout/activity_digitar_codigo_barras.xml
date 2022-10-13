@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Digitar_codigo_barras">
+
+    <include
+        android:id="@+id/include22"
+        layout="@layout/toolbar_digitar_codigos" />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tplData"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:counterEnabled="true"
+        app:counterMaxLength="10"
+        app:layout_constraintStart_toStartOf="parent"
+        android:hint="Digite a 1° parte"
+        app:layout_constraintTop_toBottomOf="@+id/include22">
+
+        <com.santalu.maskara.widget.MaskEditText
+            android:id="@+id/etDat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLength="11"
+            android:background="@drawable/bg_borda_arredondada_azul"
+            android:drawableStart="@drawable/ic_1"
+            android:drawablePadding="16dp"
+            app:mask=" _____._____ "
+            app:maskCharacter="_"
+            app:maskStyle="normal"
+            android:inputType="number" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tplData2"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        app:counterEnabled="true"
+        app:counterMaxLength="10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tplData">
+
+        <com.santalu.maskara.widget.MaskEditText
+            android:id="@+id/etDat2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_borda_arredondada_azul"
+            android:drawableStart="@drawable/ic_segunda_parte"
+            android:drawablePadding="16dp"
+            android:maxLength="11"
+            android:hint="Digite a 2° parte"
+            app:mask=" _____._____ "
+            app:maskCharacter="_"
+            app:maskStyle="normal"
+            android:inputType="number" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tplData3"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        app:counterEnabled="true"
+        app:counterMaxLength="10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tplData2">
+
+        <com.santalu.maskara.widget.MaskEditText
+            android:id="@+id/etDat3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_borda_arredondada_azul"
+            android:drawableStart="@drawable/ic_terceira_parte"
+            android:drawablePadding="16dp"
+            android:maxLength="11"
+            android:hint="Digite a 3° parte"
+            app:mask=" _____._____ "
+            app:maskCharacter="_"
+            app:maskStyle="normal"
+            android:inputType="number" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tplData5"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        app:counterEnabled="true"
+        app:counterMaxLength="1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tplData3">
+
+        <com.santalu.maskara.widget.MaskEditText
+            android:id="@+id/etDat4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_borda_arredondada_azul"
+            android:drawableStart="@drawable/ic_quarta_parte"
+            android:drawablePadding="16dp"
+            android:maxLength="2"
+            android:hint="Digite a 4° parte"
+            app:mask=" _"
+            app:maskCharacter="_"
+            android:inputType="number" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tplData6"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        app:counterEnabled="true"
+        app:counterMaxLength="10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tplData5">
+
+        <com.santalu.maskara.widget.MaskEditText
+            android:id="@+id/etDat5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_borda_arredondada_azul"
+            android:drawableStart="@drawable/ic_quinta_parte"
+            android:drawablePadding="16dp"
+            android:hint="Digite a 5° parte"
+            android:maxLength="11"
+            app:mask=" _____._____ "
+            app:maskCharacter="_"
+            app:maskStyle="normal"
+            android:inputType="number" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/avancar_boletos"
+        style="@style/botao_entrar"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Avançar"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tplData6" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

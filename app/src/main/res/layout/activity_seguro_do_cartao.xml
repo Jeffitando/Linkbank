@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".SeguroDoCartao">
+
+    <TextView
+        android:id="@+id/textView136"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Fraudes, perdas e furtos;\nRoubo após saque do cartão; \nSaque ou compra sob coação \n(quando alguém te força a realizar a transação); \nCompras feitas pós roubo do cartão; \nRoubo de bolsa ou carteira; \nMorte ou invalidez por crime; \nAssistência geral; \nCobertura em caso de desemprego."
+        android:textAlignment="textStart"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView98" />
+
+    <include
+        android:id="@+id/include10"
+        layout="@layout/toolbar_seguro_do_cartao" />
+
+
+    <TextView
+        android:id="@+id/textView100"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="20dp"
+        android:text="Os golpes com o cartão de crédito, seja ele roubo, clonagem e até saque ou compra sob coação podem ocorrer. Por isso, em linha geral vale muito a pena contratar esse serviço para proteger seu cartão de crédito.  Você deve analisar a cobertura contratada e o valor da mensalidade para entender se o serviço atende suas necessidades e cabe no seu bolso! Afinal a ideia é diminuir possíveis dores de cabeça, certo?"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView101" />
+
+    <TextView
+        android:id="@+id/textView101"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="Vale a pena contratar um seguro?"
+        android:textColor="@color/CorDeFundoApp"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider50" />
+
+    <TextView
+        android:id="@+id/textView99"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="20dp"
+        android:text="Neste documento constam todos os detalhes do seguro como: tempo de vigência, custos, coberturas e todas informações para solicitar a indenização.  A apólice deve ser enviada para você assim que o contrato do seu seguro de cartão de crédito for batido, e lida com atenção para garantir que tudo esteja conforme acordado."
+        android:textAlignment="textStart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView66" />
+
+    <TextView
+        android:id="@+id/textView98"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Coberturas de um seguro de cartão de crédito"
+        android:textColor="@color/CorDeFundoApp"
+        android:textSize="18dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider49" />
+
+
+    <TextView
+        android:id="@+id/textView95"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="O que é o seguro do cartão de crédito? "
+        android:textColor="@color/TemaLaranja"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/include10" />
+
+    <TextView
+        android:id="@+id/textView97"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Ele serve para proteger os usuários caso de roubo, furto ou golpe digital, já que crimes como esses vêm acontecendo cada vez mais."
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView95" />
+
+    <View
+        android:id="@+id/divider49"
+        android:layout_width="409dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="1dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView97" />
+
+    <View
+        android:id="@+id/divider50"
+        android:layout_width="409dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="1dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView99" />
+
+    <View
+        android:id="@+id/divider53"
+        android:layout_width="409dp"
+        android:layout_height="1dp"
+        android:layout_marginBottom="4dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView100" />
+
+    <TextView
+        android:id="@+id/textView66"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Apólice do seguro de cartão de crédito"
+        android:textColor="@color/CorDeFundoApp"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView136" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

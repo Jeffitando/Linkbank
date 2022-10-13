@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/TelaEntrada"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/corfundo_app_gradient"
+    tools:context=".TelaDeEntrada">
+
+    <View
+        android:id="@+id/containerComponents"
+        style="@style/ContainerComponents"
+        android:layout_width="380dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="80dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView21" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/trocar_senha3"
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@+id/containerComponents">
+
+        <EditText
+            android:id="@+id/loginEmail"
+            style="@style/Edit_Text"
+            android:layout_marginTop="26dp"
+            android:drawableRight="@drawable/ic_cpf"
+            android:drawablePadding="16dp"
+            android:hint="E-mail"
+            android:inputType="textEmailAddress"
+            app:layout_constraintEnd_toEndOf="@+id/containerComponents"
+            app:layout_constraintStart_toStartOf="@+id/containerComponents"
+            app:layout_constraintTop_toTopOf="@+id/containerComponents" />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout4"
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/trocar_senha3"
+        app:passwordToggleEnabled="true"
+        app:passwordToggleTint="@color/TemaLaranja">
+
+
+        <EditText
+            android:id="@+id/loginsenha"
+            style="@style/Edit_Text"
+            android:layout_marginTop="16dp"
+            android:drawableRight="@drawable/ic_eye"
+            android:drawablePadding="16dp"
+            android:hint="Senha"
+            android:maxLength="6"
+            android:inputType="numberPassword"
+            app:layout_constraintEnd_toEndOf="@+id/containerComponents"
+            app:layout_constraintStart_toStartOf="@+id/containerComponents"
+            app:layout_constraintTop_toBottomOf="@+id/loginEmail" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/entrarlogin"
+        style="@style/botao_entrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:onClick="validaDados"
+        android:text="Entrar"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/containerComponents" />
+
+    <ImageView
+        android:id="@+id/imageView21"
+        android:layout_width="wrap_content"
+        android:layout_height="130dp"
+        android:layout_marginTop="52dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logolinkbankclaro" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="180dp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/containerComponents"
+        tools:visibility="visible" />
+
+    <TextView
+
+        android:id="@+id/tv_criarconta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="20dp"
+        android:text="Criar conta"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/entrarlogin" />
+
+    <TextView
+        android:id="@+id/tv_recuperarconta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="22dp"
+        android:text="Recuperar conta"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/entrarlogin" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

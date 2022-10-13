@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".transferencia.ValorTedActivity">
+
+
+    <include
+        android:id="@+id/include24"
+        layout="@layout/toolbar_trans_ted" />
+
+
+    <View
+        android:id="@+id/divider52"
+        android:layout_width="409dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="12dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvSaldo" />
+
+
+    <TextView
+        android:id="@+id/txt_informe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="24dp"
+        android:text="Informe o valor a ser transferido"
+        android:textColor="@color/CorDeFundoAppMaisClara"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider52" />
+
+    <com.blackcat.currencyedittext.CurrencyEditText
+        android:id="@+id/edtValor"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="24dp"
+        android:backgroundTint="@color/CorDeFundoAppMaisClara"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        android:textColorHint="@color/CorDeFundoAppMaisClara"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_informe" />
+
+    <ImageView
+        android:id="@+id/imageView13"
+        android:layout_width="61dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/include24"
+        app:srcCompat="@drawable/ic_transf" />
+
+    <TextView
+        android:id="@+id/textView134"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="SALDO EM CONTA CORRENTE"
+        android:textColor="@color/CorDeFundoAppMaisClara"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView13" />
+
+    <TextView
+        android:id="@+id/tvSaldo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="R$ 1.500,00"
+        android:textColor="@color/TemaLaranja"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView134" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnConfirmar"
+        style="@style/botao_entrar"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="40dp"
+        android:text="Continuar"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtValor" />
+
+    <ProgressBar
+        android:id="@+id/progressBar2"
+        style="@style/Theme.ProgressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:theme="@style/Theme.ProgressBar"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnConfirmar"
+        tools:visibility="visible" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

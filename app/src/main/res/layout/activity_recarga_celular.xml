@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".recarga_celular">
+
+
+    <include
+        android:id="@+id/include13"
+        layout="@layout/toolbar_recarga" />
+
+
+    <TextView
+        android:id="@+id/textView154"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Valor da recarga"
+        android:textColor="@color/CorDeFundoAppMaisClara"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/include13" />
+
+    <com.blackcat.currencyedittext.CurrencyEditText
+
+        android:id="@+id/edtValor"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+
+        android:backgroundTint="@color/CorDeFundoAppMaisClara"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textColorHint="@color/CorDeFundoAppMaisClara"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView154" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/txtlayout2"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:hint="Insira o número"
+        android:textColorHint="@color/CorDeFundoAppMaisClara"
+        app:endIconMode="clear_text"
+        app:layout_constraintBottom_toTopOf="@+id/horizontalScrollView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtValor"
+        app:prefixText="+55"
+        app:startIconDrawable="@drawable/recarga_celular">
+
+        <com.santalu.maskara.widget.MaskEditText
+            android:id="@+id/edtTelefone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            app:mask="(__)_____-____"
+            app:maskCharacter="_" />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView2"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="250dp"
+        android:fillViewport="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtValor">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/OperadoraVivo"
+                android:layout_width="130dp"
+                android:layout_height="75dp"
+                android:layout_marginVertical="20dp"
+                android:layout_marginStart="20dp"
+                android:background="@drawable/bg_menu_geral"
+                android:elevation="10dp">
+
+                <ImageView
+                    android:id="@+id/img_transferir_pix"
+                    android:layout_width="40dp"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="10dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/vivo" />
+
+                <TextView
+                    android:id="@+id/tv_transferir_pix"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:text="VIVO"
+                    android:textColor="#673AB7"
+                    android:textSize="12dp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/OperadoraClaro"
+                android:layout_width="130dp"
+                android:layout_height="75dp"
+                android:layout_marginVertical="20dp"
+                android:layout_marginStart="20dp"
+                android:background="@drawable/bg_menu_geral"
+                android:elevation="10dp">
+
+                <ImageView
+                    android:id="@+id/imgPagamentos"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="10dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/logo_claro" />
+
+                <TextView
+                    android:id="@+id/tvPagamentos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:text="CLARO"
+                    android:textColor="#E51B28"
+                    android:textSize="12dp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/OperadoraTim"
+                android:layout_width="130dp"
+                android:layout_height="75dp"
+                android:layout_marginVertical="20dp"
+                android:layout_marginStart="20dp"
+                android:background="@drawable/bg_menu_geral"
+                android:elevation="10dp"
+                android:onClick="validaDados">
+
+                <ImageView
+                    android:id="@+id/imgCartoes"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="10dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/logo_tim" />
+
+                <TextView
+                    android:id="@+id/tvCartoes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:text="TIM"
+                    android:textColor="#3F51B5"
+                    android:textSize="12dp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/OperadoraOi"
+                android:layout_width="130dp"
+                android:layout_height="75dp"
+                android:layout_marginVertical="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/bg_menu_geral"
+                android:elevation="10dp">
+
+                <ImageView
+                    android:id="@+id/imgPix"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="10dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/logo_oi" />
+
+                <TextView
+                    android:id="@+id/tvPix"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:text="OI"
+                    android:textColor="#FC5F17"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Seleciona a operadora para avançar"
+        android:textColor="@color/CorDeFundoAppMaisClara"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/horizontalScrollView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtlayout2" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="@style/Theme.ProgressBar"
+        android:theme="@style/Theme.ProgressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:visibility="gone"
+        tools:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView2" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">LinkBank</string>
+    <string name="text_valor">R$ %1$s</string>
+    <string name="text_enviada_por">Enviada por %1$s</string>
+    <string name="text_enviado_por">Enviado por %1$s</string>
+    <string name="text_tipo_transferencia">Transferência %1$s \ncom sucesso!</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="tvPrivacidade">Características e Funcionalidades da conta do Link bank
+A conta do Link Bank é uma conta de pagamento pré-paga. Uma vez que os recursos estejam depositados na sua conta do Link bank, Você poderá utilizá-los para realizar transferências, pagar contas e realizar compras;
+A conta do Link bank é de sua titularidade exclusiva, podendo ser movimentada a qualquer momento por meio do aplicativo para celular e do Cartão na Função Débito, que poderá ser oferecido a você;
+</string>
+    <string name="sair">Sair</string>
+    <string name="data">Data</string>
+    <string name="Taxas_Juros_Impostos">Juros são valores adicionados ao crédito solicitado como uma espécie de lucro para o credor, já as taxas são valores cobrados pelo serviço prestado e pela administração pública. Taxas não podem ser cobradas na liberação do empréstimo, sendo assim os valores de juros e taxas serão inclusos no financiamento.
+IOF é a sigla para Imposto sobre Operações de Crédito, Câmbio e Seguros. O IOF foi criado para ser um instrumento regulatório da economia. Por meio da arrecadação desse imposto. taxas de IOF: - 3% ao ano para pessoa física; - 0,38% na abertura da operação de crédito; - Máximo de 25% para operações de câmbio e de seguro; - 1,5% ao dia para títulos e valores imobiliários.</string>
+</resources>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TermosEPrivacidade"
+    android:background="@drawable/corfundo_app_gradient">
+
+    <ImageButton
+        android:id="@+id/btnVoltar_Entrada"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@android:color/transparent"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/ic_voltar_seguros"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/termosBtn"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="49dp"
+        android:layout_marginTop="180dp"
+        android:backgroundTint="@color/TemaLaranja"
+        android:text="Termos"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toStartOf="@+id/privacidadeBtn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/privacidadeBtn"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="180dp"
+        android:layout_marginEnd="48dp"
+        android:backgroundTint="@color/white"
+        android:text="Privacidade"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/aceitotermos"
+        android:layout_width="365dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="120dp"
+        android:background="@drawable/fundo_borda_arredondada"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/termosBtn" />
+
+    <ImageView
+        android:id="@+id/concordoprivacidade"
+        android:layout_width="365dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/fundo_borda_arredondada"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/aceitotermos" />
+
+    <Switch
+        android:id="@+id/switchTermos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="16dp"
+        android:thumbTint="@color/TemaLaranja"
+        android:trackTint="@color/TemaLaranja"
+        app:layout_constraintStart_toStartOf="@+id/aceitotermos"
+        app:layout_constraintTop_toTopOf="@+id/aceitotermos" />
+
+    <Switch
+        android:id="@+id/switchPrivacidade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="16dp"
+        android:thumbTint="@color/TemaLaranja"
+        android:trackTint="@color/TemaLaranja"
+        app:layout_constraintStart_toStartOf="@+id/concordoprivacidade"
+        app:layout_constraintTop_toTopOf="@+id/concordoprivacidade" />
+
+    <TextView
+        android:id="@+id/tvTermos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Eu aceito os termos desse serviço"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.141"
+        app:layout_constraintStart_toEndOf="@+id/switchTermos"
+        app:layout_constraintTop_toTopOf="@+id/aceitotermos" />
+
+    <TextView
+        android:id="@+id/tvPrivacidade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Concordo com a privacidade do político"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.235"
+        app:layout_constraintStart_toEndOf="@+id/switchPrivacidade"
+        app:layout_constraintTop_toTopOf="@+id/concordoprivacidade" />
+
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnentrar"
+        style="@style/botao_entrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Entrar"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/concordoprivacidade" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

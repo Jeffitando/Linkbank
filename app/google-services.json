@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "708828188774",
+    "firebase_url": "https://linkbank-200bc-default-rtdb.firebaseio.com",
+    "project_id": "linkbank-200bc",
+    "storage_bucket": "linkbank-200bc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:708828188774:android:ad537fc0cfe6522774dda7",
+        "android_client_info": {
+          "package_name": "com.example.linkbank"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "708828188774-h0or34eigv6j4b7koteog43lubv69mso.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.linkbank",
+            "certificate_hash": "0a9d359dda3cbc7ac0781e8f9403dc17e94e68ab"
+          }
+        },
+        {
+          "client_id": "708828188774-b6vi6pm23i6j9e9upgbm1dg9qmghlca4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBZLxFhlkGOxdFIYGTSzJQAizXoucleb7I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "708828188774-b6vi6pm23i6j9e9upgbm1dg9qmghlca4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

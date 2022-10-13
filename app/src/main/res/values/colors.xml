@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="gray">#666</color>
+    <color name="TemaLaranja">#FC5F17</color>
+    <color name="CorDeFundoApp">#181165</color>
+    <color name="barra">#40211695</color>
+    <color name="ColorError">#cc0000</color>
+    <color name="ColorSuccess">#4bb543</color>
+    <color name="colorDelete">#FA0014</color>
+    <color name="ColorNeutral">#434343</color>
+    <color name="ColorWarning">#FFCC00</color>
+    <color name="CorDeFundoAppMaisClara">#211695</color>
+
+
+    <style name="ContainerComponents">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">250dp</item>
+        <item name="android:background">@drawable/container_components</item>
+
+
+    </style>
+
+    <style name="Edit_Text">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/edit_text</item>
+        <item name="android:padding">20dp</item>
+        <item name="android:layout_marginLeft">40dp</item>
+        <item name="android:layout_marginRight">40dp</item>
+        <item name="android:layout_marginTop">25dp</item>
+    </style>
+
+
+    <style name="botao_entrar">
+
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_marginLeft">40dp</item>
+        <item name="android:layout_marginRight">40dp</item>
+        <item name="android:background">@drawable/button_entrar</item>
+
+    </style>
+
+    <style name="boutton_azul">
+
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:layout_width">wrap_content</item>
+    <item name="android:layout_marginLeft">40dp</item>
+    <item name="android:layout_marginRight">40dp</item>
+    <item name="android:background">@drawable/button_azul</item>
+
+    </style>
+    
+    
+    
+    <style name="AlertDialogTheme" parent="Theme.AppCompat.Light.Dialog.Alert">
+        
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        
+    </style>
+
+</resources>

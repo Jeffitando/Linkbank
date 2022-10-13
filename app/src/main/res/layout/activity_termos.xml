@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Termos"
+    android:background="@drawable/corfundo_app_gradient">
+
+            <ImageView
+                android:id="@+id/btnvoltar_termoseprivacidade"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="32dp"
+                android:src="@drawable/ic_seta_esquerda"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="340dp"
+        android:layout_height="930dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginBottom="80dp"
+        android:src="@drawable/fundotextos"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Termos"
+        android:textColor="#ddd"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:text="Resumo do Contrato da conta do Link bank ou Prospécto
+Honrando o nosso compromisso de simplicidade e transparência, fizemos o máximo para ter um contrato reduzido e escrito em uma linguagem simples e direta. Aqui Você terá um resumo dos principais pontos do nosso Contrato e sobre a sua conta do Link bank. Lembrando que isso é apenas um resumo para facilitar a sua leitura do Contrato inteiro!
+Primeiramente, é importante Você ter uma ideia de seus principais direitos e também de suas principais obrigações."
+        android:textColor="#ddd"
+        android:textSize="20dp"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="@+id/imageView" />
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="25dp"
+        android:text="Resumo do Contrato da conta do Link bank ou Prospécto
+Honrando o nosso compromisso de simplicidade e transparência, fizemos o máximo para ter um contrato reduzido e escrito em uma linguagem simples e direta. Aqui Você terá um resumo dos principais pontos do nosso Contrato e sobre a sua conta do Link bank. Lembrando que isso é apenas um resumo para facilitar a sua leitura do Contrato inteiro!
+Primeiramente, é importante Você ter uma ideia de seus principais direitos e também de suas principais obrigações."
+        android:textColor="#ddd"
+        android:textSize="20dp"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

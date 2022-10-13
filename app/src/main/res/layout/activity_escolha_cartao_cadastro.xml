@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@drawable/corfundo_app_gradient"
+    tools:context=".EscolhaCartaoCadastro">
+
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView3"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:id="@+id/imgCartao"
+                android:layout_width="wrap_content"
+                android:layout_height="750dp"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/cartao_azul_novo"
+                android:clickable="true"
+                android:elevation="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <ImageView
+                android:id="@+id/imgCartao2"
+                android:layout_width="wrap_content"
+                android:layout_height="750dp"
+                android:clickable="true"
+                android:elevation="20dp"
+                android:background="@drawable/cartao_laranja"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <ImageView
+                android:id="@+id/imgCartao3"
+                android:layout_width="wrap_content"
+                android:layout_height="750dp"
+                android:clickable="true"
+                android:elevation="20dp"
+                android:background="@drawable/cartao_verde"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <ImageView
+                android:id="@+id/imgCartao4"
+                android:layout_width="wrap_content"
+                android:layout_height="750dp"
+                android:clickable="true"
+                android:elevation="20dp"
+                android:background="@drawable/cartao_black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <ImageView
+                android:id="@+id/imgCartao5"
+                android:layout_width="wrap_content"
+                android:layout_height="750dp"
+                android:clickable="true"
+                android:elevation="20dp"
+                android:background="@drawable/cartao_rosa"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_weight="1"
+        android:text="Escolha seu Cartão"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_avancar_cartao_verde"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/ic_avancar_branco" />
+
+    <ImageView
+        android:id="@+id/iv_voltar_cartao_azul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ic_voltar_cartao_personalizado" />
+</androidx.constraintlayout.widget.ConstraintLayout>

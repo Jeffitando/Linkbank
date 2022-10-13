@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.linkbank">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_logo_novo7"
+        android:label="LinkBank"
+        android:roundIcon="@mipmap/ic_logo_novo7"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.SplashScreen"
+        tools:targetApi="31">
+        <activity
+            android:name=".AplicarValor"
+            android:exported="false" />
+        <activity
+            android:name=".SeguroDoCartao"
+            android:exported="false" />
+        <activity
+            android:name=".Recibo_chave_aleatoria"
+            android:exported="false" />
+        <activity
+            android:name=".Chave_pix_aleatoria"
+            android:exported="false" />
+        <activity
+            android:name=".Recibo_pix_telefone"
+            android:exported="false" />
+        <activity
+            android:name=".Telefone_pix"
+            android:exported="false" />
+        <activity
+            android:name=".Recibo_pix_email"
+            android:exported="false" />
+        <activity
+            android:name=".Email_pix"
+            android:exported="false" />
+        <activity
+            android:name=".Comprovante_pix_cpf"
+            android:exported="false" />
+        <activity
+            android:name=".Cpf_pix"
+            android:exported="false" />
+        <activity
+            android:name=".Sucesso_Emprestimo"
+            android:exported="false" />
+        <activity
+            android:name=".Tela_ajuda_Emprestimo"
+            android:exported="false" />
+        <activity
+            android:name=".Mudar_senha_app"
+            android:exported="false" />
+        <activity
+            android:name=".Comprovante_pix_ChaveAleatoria"
+            android:exported="false" />
+        <activity
+            android:name=".Comprovante_boleto"
+            android:exported="false" />
+        <activity
+            android:name=".Dados_boleto"
+            android:exported="false" />
+        <activity
+            android:name=".Duvidas_boletos"
+            android:exported="false" />
+        <activity
+            android:name=".Digitar_codigo_barras"
+            android:exported="false" />
+        <activity
+            android:name=".Duvida_transferencia"
+            android:exported="false" />
+        <activity
+            android:name=".comprovante_doc"
+            android:exported="false" />
+        <activity
+            android:name=".SegundaViaCartao"
+            android:exported="false" />
+        <activity
+            android:name=".transferir_doc"
+            android:exported="false" />
+        <activity
+            android:name=".comprovante_ted"
+            android:exported="false" />
+        <activity
+            android:name=".transferencia_menu"
+            android:exported="false" />
+        <activity
+            android:name=".TelaDeEntrada"
+            android:exported="true">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".Transferir_ted"
+            android:exported="false" />
+        <activity
+            android:name=".ExtratoPix"
+            android:exported="false" />
+        <activity
+            android:name=".TelaDeContas"
+            android:exported="false" />
+        <activity
+            android:name=".aumentar_limite_pix"
+            android:exported="false" />
+        <activity
+            android:name=".limites_pix"
+            android:exported="false" />
+        <activity
+            android:name=".solicitar_portabilidade"
+            android:exported="false" />
+        <activity
+            android:name=".trocar_senha_cartao"
+            android:exported="false" />
+        <activity
+            android:name=".ChavesPixAtivas"
+            android:exported="false" />
+        <activity
+            android:name=".consorcio.ConsorcioAnalise"
+            android:exported="false" />
+        <activity
+            android:name=".NotificacaoLista"
+            android:exported="false" />
+        <activity
+            android:name=".analise_proposta"
+            android:exported="false" />
+        <activity
+            android:name=".recuperar_senha_sms"
+            android:exported="false" />
+        <activity
+            android:name=".Receber_pix"
+            android:exported="false" />
+        <activity
+            android:name=".Recuperar_senha"
+            android:exported="false" />
+        <activity
+            android:name=".Cobranca_pix"
+            android:exported="false" />
+        <activity
+            android:name=".Deposito"
+            android:exported="false" />
+        <activity
+            android:name=".comprovante_contrato_seguro"
+            android:exported="false" />
+        <activity
+            android:name=".duvida_pix"
+            android:exported="false" />
+        <activity
+            android:name=".pix_menu"
+            android:exported="false" />
+        <activity
+            android:name=".comprovante_recarga"
+            android:exported="false" />
+        <activity
+            android:name=".recarga_celular"
+            android:exported="false" />
+        <activity
+            android:name=".Cadastrar_Pix"
+            android:exported="false" />
+        <activity
+            android:name=".consorcio.Consorcios"
+            android:exported="false" />
+        <activity
+            android:name=".Seguros_simulacao"
+            android:exported="false" />
+        <activity
+            android:name=".Seguros_contrato"
+            android:exported="false" />
+        <activity
+            android:name=".Seguros_menu"
+            android:exported="false" />
+        <activity
+            android:name=".Configurar_Pix"
+            android:exported="false" />
+        <activity
+            android:name=".Notificacao"
+            android:exported="false" />
+        <activity
+            android:name=".Seguranca_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Meus_dados"
+            android:exported="false" />
+        <activity
+            android:name=".Gera_menu2"
+            android:exported="false" />
+        <activity
+            android:name=".Valor_deposito"
+            android:exported="false" />
+        <activity
+            android:name=".Emprestimo_valor"
+            android:exported="false" />
+        <activity
+            android:name=".Emprestimo_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Termos"
+            android:exported="false" />
+        <activity
+            android:name=".CartaoLimite"
+            android:exported="false" />
+        <activity
+            android:name=".Cartao"
+            android:exported="false" />
+        <activity
+            android:name=".Atendimento"
+            android:exported="false" />
+        <activity
+            android:name=".Pix4"
+            android:exported="false" />
+        <activity
+            android:name=".Pix3"
+            android:exported="false" />
+        <activity
+            android:name=".Pix2"
+            android:exported="false" />
+        <activity
+            android:name=".Pix"
+            android:exported="false" />
+        <activity
+            android:name=".Termos"
+            android:exported="false"
+            tools:ignore="DuplicateActivity" />
+        <activity
+            android:name=".TermosEPrivacidade"
+            android:exported="false" />
+        <activity
+            android:name=".Privacidade"
+            android:exported="false" />
+        <activity
+            android:name=".Home"
+            android:exported="false" />
+        <activity
+            android:name=".Caso_ja_tenha_uma_conta_2"
+            android:exported="false" />
+        <activity
+            android:name=".Tela_Caso_ja_tenha_uma_conta"
+            android:exported="false" />
+        <activity
+            android:name=".TelaLogin"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CadastroDadosPessoais"
+            android:exported="false" />
+        <activity
+            android:name=".EscolhaCartaoCadastro"
+            android:exported="false" />
+        <activity
+            android:name=".PropostaEnviada"
+            android:exported="false" />
+        <activity
+            android:name=".PropostaAprovada"
+            android:exported="false" />
+        <activity
+            android:name=".Pagamentos"
+            android:exported="false" />
+        <activity
+            android:name=".DepositoReciboActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CrieSuaSenhaDeLogin"
+            android:exported="false" />
+        <activity
+            android:name=".CaptureAct"
+            android:exported="false" />
+        <activity
+            android:name=".TelaDeCriacaoDeSenha"
+            android:exported="false" />
+        <activity
+            android:name=".CadastroEndereco"
+            android:exported="false" />
+        <activity
+            android:name=".consorcio.ConsorcioDeCarro"
+            android:exported="false" />
+        <activity
+            android:name=".consorcio.ConsorcioDeCasa"
+            android:exported="false" />
+        <activity
+            android:name=".consorcio.ConsorcioDeMoto"
+            android:exported="false" />
+        <activity
+            android:name=".consorcio.ConsorcioDeTerreno"
+            android:exported="false" />
+        <activity
+            android:name=".consorcio.ConsorcioDeReforma"
+            android:exported="false" />
+        <activity
+            android:name=".valor_transferencia_doc"
+            android:exported="false"/>
+
+    </application>
+
+</manifest>

@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F6F6F6"
+    tools:context=".Conta_poupanca">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="-20dp"
+        android:background="@drawable/background_home"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/minhaConta"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="40dp"
+            android:cropToPadding="true"
+            android:padding="3dp"
+
+            android:scaleType="centerCrop"
+
+            android:src="@drawable/user"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="60dp"
+            android:text="Olá, Seja Bem-Vindo!"
+            android:textColor="@color/white"
+            android:textSize="14dp"
+            app:layout_constraintStart_toEndOf="@+id/minhaConta"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvUsername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="75dp"
+            android:text="Dioges Mota"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/btnConfig"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="-20dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/fundotextos"
+            android:padding="5dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textView2"
+            app:srcCompat="@drawable/ic_menu_seguros" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayoutHide"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="120dp"
+        android:background="@drawable/saldo_bg"
+        android:elevation="10dp"
+        android:orientation="horizontal"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imgHide"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="15dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/hide"
+            tools:layout_editor_absoluteX="13dp"
+            tools:layout_editor_absoluteY="98dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp"
+            android:layout_weight="10"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/tvSaldoPoupanca"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text=" CONTA POUPANÇA"
+                android:textColor="@color/TemaLaranja"
+                android:textSize="12dp"
+
+                />
+
+            <TextView
+                android:id="@+id/tvSaldoConta"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:text="R$ 6.798,00"
+                android:textColor="@color/TemaLaranja"
+                android:textSize="24dp"
+                android:textStyle="bold"
+                app:endIconMode="password_toggle" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView2"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:fillViewport="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/layoutTransfer"
+                android:layout_width="130dp"
+                android:layout_height="75dp"
+                android:layout_marginVertical="20dp"
+                android:layout_marginStart="20dp"
+                android:background="@drawable/bg_menu_geral"
+                android:elevation="10dp">
+
+                <ImageView
+                    android:id="@+id/imgTransfer"
+                    android:layout_width="40dp"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="10dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/extrato_128" />
+
+                <TextView
+                    android:id="@+id/tvExtrato"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:text="Extrato"
+                    android:textColor="#FC5F17"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/layoutPagamentos"
+                android:layout_width="130dp"
+                android:layout_height="75dp"
+                android:layout_marginVertical="20dp"
+                android:layout_marginStart="20dp"
+                android:background="@drawable/bg_menu_geral"
+                android:elevation="10dp">
+
+                <ImageView
+                    android:id="@+id/imgPagamentos"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="10dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/aplicar" />
+
+                <TextView
+                    android:id="@+id/tvAplicar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:text="Aplicar"
+                    android:textColor="#FC5F17"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/layoutPix"
+                android:layout_width="130dp"
+                android:layout_height="75dp"
+                android:layout_marginVertical="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/bg_menu_geral"
+                android:elevation="10dp">
+
+                <ImageView
+                    android:id="@+id/imgPix"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="10dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/resgatar" />
+
+                <TextView
+                    android:id="@+id/tvResgatar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:text="Resgatar"
+                    android:textColor="#FC5F17"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/layoutDeposito"
+                android:layout_width="130dp"
+                android:layout_height="75dp"
+                android:layout_marginVertical="20dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/bg_menu_geral"
+                android:elevation="10dp">
+
+                <ImageView
+                    android:id="@+id/imgDeposito"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="10dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/programa"
+
+                    />
+
+                <TextView
+                    android:id="@+id/tvprogramar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:text="Programar"
+                    android:textColor="#FC5F17"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <TextView
+        android:id="@+id/tvRecentes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Transações Recentes"
+        android:textColor="#181165"
+        android:textSize="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView2" />
+
+    <TextView
+        android:id="@+id/tvTodas"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/categoria_premium"
+        android:paddingHorizontal="15dp"
+        android:text="Todas"
+        android:textAlignment="center"
+        android:textColor="#fff"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider36" />
+
+    <TextView
+        android:id="@+id/tvEntrada"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bg_btn_gradiente_azul"
+        android:paddingHorizontal="15dp"
+        android:text="Entrada"
+        android:textAlignment="center"
+        android:textColor="#fff"
+        app:layout_constraintEnd_toStartOf="@+id/tvSaida"
+        app:layout_constraintStart_toEndOf="@+id/tvTodas"
+        app:layout_constraintTop_toBottomOf="@+id/divider36" />
+
+    <TextView
+        android:id="@+id/tvSaida"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/bg_btn_gradiente_azul"
+        android:paddingHorizontal="15dp"
+        android:text="Saída"
+        android:textAlignment="center"
+        android:textColor="#fff"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider36" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerExtrato"
+        android:layout_width="match_parent"
+        android:layout_height="320dp"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvEntrada"
+        tools:listitem="@layout/adapter_extrato" />
+
+    <View
+        android:id="@+id/divider36"
+        android:layout_width="409dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="2dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvRecentes" />
+
+    <View
+        android:id="@+id/divider37"
+        android:layout_width="409dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="6dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvEntrada" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:elevation="2dp"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="@+id/recyclerExtrato"
+        app:layout_constraintEnd_toEndOf="@+id/recyclerExtrato"
+        app:layout_constraintStart_toStartOf="@+id/recyclerExtrato"
+        app:layout_constraintTop_toTopOf="@+id/recyclerExtrato">
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:theme="@style/Theme.ProgressBar"
+            style="@style/Theme.ProgressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/textInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Carregando..."
+            android:textAlignment="center" />
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

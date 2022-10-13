@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".PoupancaExtrato">
+
+    <include
+        android:id="@+id/include27"
+        layout="@layout/toolbar_poupanca_extrato"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvRecentes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Transações Recentes"
+        android:textColor="#181165"
+        android:textSize="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/include27" />
+
+    <TextView
+        android:id="@+id/tvTodas"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/categoria_premium"
+        android:paddingHorizontal="15dp"
+        android:text="Todas"
+        android:textAlignment="center"
+        android:textColor="#fff"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvRecentes" />
+
+    <TextView
+        android:id="@+id/tvEntrada"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/bg_btn_gradiente_azul"
+        android:paddingHorizontal="15dp"
+        android:text="Entrada"
+        android:textAlignment="center"
+        android:textColor="#fff"
+        app:layout_constraintEnd_toStartOf="@+id/tvSaida"
+        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintStart_toEndOf="@+id/tvTodas"
+        app:layout_constraintTop_toBottomOf="@+id/tvRecentes" />
+
+    <TextView
+        android:id="@+id/tvSaida"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/bg_btn_gradiente_azul"
+        android:paddingHorizontal="15dp"
+        android:text="Saída"
+        android:textAlignment="center"
+        android:textColor="#fff"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvRecentes" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="150dp"
+        app:layout_constraintTop_toBottomOf="@+id/tvEntrada">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerExtratoPoupanca2"
+                android:layout_width="match_parent"
+                android:layout_height="320dp"
+                android:layout_marginHorizontal="10dp"
+                tools:listitem="@layout/adapter_extrato" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerExtratoPoupanca1"
+                android:layout_width="match_parent"
+                android:layout_height="320dp"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginTop="8dp"
+                tools:listitem="@layout/adapter_extrato" />
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/btnProx"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/corfundo_app_gradient"
+    tools:context=".CrieSuaSenhaDeLogin">
+
+    <ImageView
+        android:id="@+id/imgv_error"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toStartOf="@+id/tv_criterio1"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_criterio1"
+        app:srcCompat="@drawable/ic_verificado" />
+
+    <TextView
+        android:id="@+id/tv_criterio2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Máximo de 6 digitos"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_criterio1" />
+
+    <TextView
+        android:id="@+id/tv_criterio1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Apenas números"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_nova_senha" />
+
+    <ImageView
+        android:id="@+id/imgv_error2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        app:layout_constraintEnd_toStartOf="@+id/tv_criterio1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_nova_senha"
+        app:srcCompat="@drawable/ic_verificado" />
+
+    <ImageView
+        android:id="@+id/img_senha"
+        android:layout_width="188dp"
+        android:layout_height="149dp"
+        android:layout_marginTop="56dp"
+        android:src="@drawable/logolinkbankclaro"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/novaSenha"
+        style="@style/Edit_Text"
+
+        android:layout_marginTop="60dp"
+        android:drawablePadding="16dp"
+        android:hint="Crie sua senha"
+        android:inputType="numberPassword"
+        android:maxLength="6"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_senha" />
+
+    <EditText
+        android:id="@+id/novaSenha_confirmar"
+        style="@style/Edit_Text"
+        android:drawablePadding="16dp"
+        android:hint="Confirme sua senha"
+        android:inputType="numberPassword"
+        android:maxLength="6"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/novaSenha" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_nova_senha"
+        style="@style/botao_entrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Enviar"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/novaSenha_confirmar" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

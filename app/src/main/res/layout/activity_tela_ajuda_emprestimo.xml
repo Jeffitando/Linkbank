@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white">
+
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Tela_ajuda_Emprestimo">
+
+    <include
+        android:id="@+id/emprestimo_ajuda"
+        layout="@layout/toolbar_emprestimo" />
+
+    <TextView
+        android:id="@+id/txtTaxas_Juros_Impostos"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginTop="24dp"
+        android:text="TAXAS, JUROS E IMPOSTOS"
+        android:textAlignment="center"
+        android:textColor="@color/CorDeFundoApp"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emprestimo_ajuda" />
+
+    <com.google.android.material.divider.MaterialDivider
+        android:id="@+id/materialDivider"
+        android:layout_width="350dp"
+        android:layout_height="3dp"
+        android:background="@color/TemaLaranja"
+        app:layout_constraintEnd_toEndOf="@+id/txtTaxas_Juros_Impostos"
+        app:layout_constraintStart_toStartOf="@+id/txtTaxas_Juros_Impostos"
+        app:layout_constraintTop_toBottomOf="@+id/txtTaxas_Juros_Impostos" />
+
+    <TextView
+        android:id="@+id/Taxas_Juros_Impostos"
+        android:layout_width="290dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Juros são valores adicionados ao crédito solicitado como uma espécie de lucro para o credor, já as taxas são valores cobrados pelo serviço prestado e pela administração pública. Taxas não podem ser cobradas na liberação do empréstimo, sendo assim os valores de juros e taxas serão inclusos no financiamento.
+IOF é a sigla para Imposto sobre Operações de Crédito, Câmbio e Seguros. O IOF foi criado para ser um instrumento regulatório da economia. Por meio da arrecadação desse imposto. taxas de IOF: - 3% ao ano para pessoa física; - 0,38% na abertura da operação de crédito; - Máximo de 25% para operações de câmbio e de seguro; - 1,5% ao dia para títulos e valores imobiliários."
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/materialDivider" />
+
+    <TextView
+        android:id="@+id/txtCusto_Efetivo_Total"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginTop="52dp"
+        android:text="CUSTO EFETIVO TOTAL"
+        android:textAlignment="center"
+        android:textColor="@color/CorDeFundoApp"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Taxas_Juros_Impostos" />
+
+    <com.google.android.material.divider.MaterialDivider
+        android:id="@+id/materialDivider2"
+        android:layout_width="350dp"
+        android:layout_height="3dp"
+        android:background="@color/TemaLaranja"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtCusto_Efetivo_Total"
+        />
+
+    <TextView
+        android:id="@+id/Custo_Efetivo_Total"
+        android:layout_width="290dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Custo efetivo total ou juros anuais ou até mesmo juros percentual anual, é um numero presente na operação que mostra para o cliente o custo efetivo na operação dentro do período de um ano. O custo efetivo total deve ser apresentado para o cliente para ele poder analisar e comparar com outras instituições financeiras para verificar o que há de melhor em financiamento dentro do seu orçamento."
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/materialDivider2" />
+
+    <TextView
+        android:id="@+id/Cancelamento"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginTop="52dp"
+        android:text="CANCELAMENTO"
+        android:textAlignment="center"
+        android:textColor="@color/CorDeFundoApp"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Custo_Efetivo_Total" />
+
+    <com.google.android.material.divider.MaterialDivider
+        android:id="@+id/materialDivider3"
+        android:layout_width="350dp"
+        android:layout_height="3dp"
+        android:background="@color/TemaLaranja"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Cancelamento" />
+
+    <TextView
+        android:id="@+id/txtCancelamento"
+        android:layout_width="290dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Custo efetivo total ou juros anuais ou até mesmo juros percentual anual, é um numero presente na operação que mostra para o cliente o custo efetivo na operação dentro do período de um ano. O custo efetivo total deve ser apresentado para o cliente para ele poder analisar e comparar com outras instituições financeiras para verificar o que há de melhor em financiamento dentro do seu orçamento."
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Cancelamento" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
+

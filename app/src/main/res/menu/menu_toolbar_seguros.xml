@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/menu_sobre_vermais"
+        android:title="O que é seguro?"/>
+
+    <item android:id="@+id/menu_apolice"
+    android:title="O que apólice de seguro?"/>
+
+    <item android:id="@+id/menu_constar"
+        android:title="O que deve constar na apólice do seguro?"/>
+
+    <item android:id="@+id/menu_tipos"
+        android:title="Tipos de apólice de seguro "/>
+
+    <item android:id="@+id/menu_permissao"
+        android:title="Quem pode ter uma apólice de seguro?"/>
+
+
+</menu>
